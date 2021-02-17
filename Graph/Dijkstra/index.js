@@ -1,3 +1,5 @@
+//Time complexity: O(V+E)log V
+
 function disktra(matrix, src) {
     let V = matrix.length;
 
