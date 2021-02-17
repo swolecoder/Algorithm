@@ -13,12 +13,13 @@ function floydWarshall(matrix) {
             // # Pick all vertices as destination for the
             // # above picked source
             for (let j = 0; j < V; j++) {
+                // # If vertex k is on the shortest path from
+                // # i to j, then update the value of dist[i][j]
                 dist[i][j] = Math.min(dist[i][j],
-                    dist[i][k] + dist[k][j]) ‰
+                    dist[i][k] + dist[k][j])
             }
 
-            // # If vertex k is on the shortest path from
-            // # i to j, then update the value of dist[i][j]
+
 
         }
 
